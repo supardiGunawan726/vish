@@ -110,6 +110,7 @@ class _VideoPlayerSliderState extends State<_VideoPlayerSlider> {
             data: Theme.of(context).sliderTheme.copyWith(
                   overlayShape: SliderComponentShape.noThumb,
                   thumbShape: SliderComponentShape.noThumb,
+                  trackShape: const RectangularSliderTrackShape(),
                 ),
             child: Slider(
                 value: _currentPosition.inMicroseconds.toDouble(),
